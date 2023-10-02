@@ -1,3 +1,4 @@
+
 import java.util.Scanner;  // Import the Scanner class
 
 public class Gestion {
@@ -9,6 +10,7 @@ public class Gestion {
         OrdiPort ordP = new OrdiPort("ACDC6767", "G Hero 405");
         Smartphone phone = new Smartphone("ACDC6666","3.0");
         Parc nParc = new Parc("RT");
+        SQL nomFichier = new SQL("javaSql.sql");
 
         System.out.println(mat);
         
@@ -21,7 +23,11 @@ public class Gestion {
         System.out.println(nParc);
         nParc.addM(mat1);
         System.out.println(nParc);
+        SQL.sauverSQL("ABCD2626");
 
+
+
+/* 
         boolean boucle = true;
         Scanner scan = new Scanner(System.in);
         Scanner scan1 = new Scanner(System.in);
@@ -87,9 +93,8 @@ public class Gestion {
             else{
                 System.out.println("ERROR INPUT: invalid input");
             }
-            
-            
         }
+*/
 
 
     }
